@@ -1,3 +1,61 @@
-<h1>Welcome to Sleepy-time</h1>
-<p> Our Hackathon Project</p>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>&#128564; Sleep &#128564;</h1>
+What time should I wake up if I sleep now...? &#129300;
+
+<script>
+function replace2() {
+    window.location.href = "file:///Users/Raymond/Desktop/test-site/page.html";
+}
+</script>
+
+<br>
+
+<button onclick="replace2()">replace me with a calculator time thing that
+  uses the getTime function thing to get current time</button>
+
+<br>
+<br>
+
+What time should I wake up if I go to sleep at... &#129300;
+
+<form action="/action_page.php">
+  <select name="time">
+    <option value="12:00">12:00</option>
+    <option value="1:00">1:00</option>
+    <option value="2:00">2:00</option>
+    <option value="3:00">3:00</option>
+    <option value="4:00">4:00</option>
+    <option value="5:00">5:00</option>
+    <option value="6:00">6:00</option>
+    <option value="7:00">7:00</option>
+    <option value="8:00">8:00</option>
+    <option value="9:00">9:00</option>
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+  </select>
+   <select name="mer">
+    <option value="am">AM</option>
+    <option value="pm">PM</option>
+  </select><br>
+  <input type="submit" style="font-family": 'Comic Sans MS'>
+</form>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
