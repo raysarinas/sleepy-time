@@ -1,19 +1,19 @@
 .header-container-wrapper{}
 
 h1 {
-	color: #E9967A;
-        font: normal 80px Comic Sans MS, sans-serif;
+	color:  #ff9166;
+        font: normal 100px Comic Sans MS, sans-serif;
 	text-align: center;
 }
 body {
-        color: #6DDDEE;
+        color: #FF4500;
         font: italic bold 20px/30px Georgia, serif;font-style: italic;
-        background-color:#5753CC;
+        background-color:#DDA0DD;
 	text-align: center;
 }
 
 .button {
 	background-color: white;
-	padding: 2px;
+	padding: 3px;
 	text-decoration: none;
 }
