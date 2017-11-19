@@ -1,8 +1,8 @@
 .header-container-wrapper{}
 
 h1 {
-	color: #E9967A;
-        font: normal 80px Comic Sans MS, sans-serif;
+	color:  #ff9166;
+        font: normal 100px Comic Sans MS, sans-serif;
 	text-align: center;
 }
 h2 {
@@ -11,14 +11,21 @@ h2 {
 				text-align: center;
 }
 body {
+<<<<<<< HEAD
+        color: #FF4500;
+        font: italic bold 20px/30px Georgia, serif;font-style: italic;
+        background-color:#DDA0DD;
+	text-align: center;
+=======
         color: #6DDDEE;
         font: bold 20px/30px Georgia, serif;
         background-color:#5753CC;
 				text-align: center;
+>>>>>>> 244c615799d3fe2080abce36f73c9a531a22643d
 }
 
 .button {
 	background-color: white;
-	padding: 2px;
+	padding: 3px;
 	text-decoration: none;
 }
