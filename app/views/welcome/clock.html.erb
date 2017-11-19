@@ -25,18 +25,19 @@
 
             OUTER_DIAL1();
             OUTER_DIAL2();
-            CENTER_DIAL();
+            //CENTER_DIAL();
             MARK_THE_HOURS();
             MARK_THE_SECONDS();
 
-            SHOW_SECONDS();
-            SHOW_MINUTES();
-            SHOW_HOURS();
+            // SHOW_SECONDS();
+            // SHOW_MINUTES();
+            // SHOW_HOURS();
 
             function OUTER_DIAL1() {
                 ctx.beginPath();
                 ctx.arc(canvas.width / 2, canvas.height / 2, secHandLength + 50, 0, Math.PI * 2);
                 ctx.strokeStyle = '#6DDDEE';
+                ctx.lineWidth = 3;
                 ctx.stroke();
             }
             function OUTER_DIAL2() {
@@ -58,7 +59,7 @@
 
                 for (var i = 0; i < 12; i++) {
                     angle = (i - 3) * (Math.PI * 2) / 12;       // THE ANGLE TO MARK.
-                    ctx.lineWidth = 1;            // HAND WIDTH.
+                    ctx.lineWidth = 2;            // HAND WIDTH.
                     ctx.beginPath();
 
                     var x1 = (canvas.width / 2) + Math.cos(angle) * (secHandLength);
