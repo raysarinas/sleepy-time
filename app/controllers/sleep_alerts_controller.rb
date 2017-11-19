@@ -26,6 +26,8 @@ class SleepAlertsController < ApplicationController
   def create
     @sleep_alert = SleepAlert.new(sleep_alert_params)
 
+    @sleep_alert.bed_time = @sleep_alert.wake_time - 8.hours
+
     respond_to do |format|
       if @sleep_alert.save
         format.html { redirect_to @sleep_alert, notice: 'Sleep alert was successfully created.' }
