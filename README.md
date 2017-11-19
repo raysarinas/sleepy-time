@@ -1,2 +1,0 @@
-# sleepy-time
-HackedBeta Project
