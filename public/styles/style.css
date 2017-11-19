@@ -8,13 +8,13 @@ h1 {
 h2 {
 	color: #E9967A;
         font: normal 30px Comic Sans MS, sans-serif;
-	text-align: center;
+				text-align: center;
 }
 body {
         color: #6DDDEE;
-        font: italic bold 20px/30px Georgia, serif;font-style: italic;
+        font: bold 20px/30px Georgia, serif;
         background-color:#5753CC;
-	text-align: center;
+				text-align: center;
 }
 
 .button {
