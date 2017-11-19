@@ -1,7 +1,5 @@
 <h1>&#128564; Sleep &#128564;</h1>
-What time should I go to bed? &#129300;
-
-<br>
+What time should I go to bed?
 
 <%#= link_to "replace me with a calculator time thing that
   uses the getTime function thing to get current time", welcome_clock_path, :class=>"button" %>
@@ -11,24 +9,29 @@ What time should I go to bed? &#129300;
   </form>
 
 <br>
-<br>
 
-What time should I wake up if I go to sleep at... &#129300;
+What time should I wake up if I go to sleep at...
 
 <form action="/sleep_alerts/new">
-  <select name="button">
-    <option value="12:00">12:00</option>
-    <option value="1:00">1:00</option>
-    <option value="2:00">2:00</option>
-    <option value="3:00">3:00</option>
-    <option value="4:00">4:00</option>
-    <option value="5:00">5:00</option>
-    <option value="6:00">6:00</option>
-    <option value="7:00">7:00</option>
-    <option value="8:00">8:00</option>
-    <option value="9:00">9:00</option>
-    <option value="10:00">10:00</option>
-    <option value="11:00">11:00</option>
+  <select name="hour">
+    <option value="12">12</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+  </select>
+  <select name="min">
+    <option value="00">00</option>
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <option value="45">45</option>
   </select>
    <select name="mer">
     <option value="am">AM</option>
