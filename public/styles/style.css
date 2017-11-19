@@ -1,13 +1,13 @@
 .header-container-wrapper{}
 
 h1 {
-	color: #6DDDEE;
-        font: normal 20px Comic Sans MS, sans-serif;
+	color: #E9967A;
+        font: normal 80px Comic Sans MS, sans-serif;
 	text-align: center;
 }
 body {
         color: #6DDDEE;
-        font: normal 14px Comic Sans MS, sans-serif;
+        font: italic bold 12px/30px Georgia, serif;font-style: italic;
         background-color:#5753CC;
 	text-align: center;
 }
