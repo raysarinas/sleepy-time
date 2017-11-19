@@ -26,7 +26,7 @@ class SleepAlertsController < ApplicationController
   def create
     @sleep_alert = SleepAlert.new(sleep_alert_params)
 
-    @sleep_alert.bed_time = @sleep_alert.wake_time - 8.hours
+    @sleep_alert.bed_time = @sleep_alert.wake_time - 9.hours
 
     respond_to do |format|
       if @sleep_alert.save
@@ -41,27 +41,27 @@ class SleepAlertsController < ApplicationController
 
   # PATCH/PUT /sleep_alerts/1
   # PATCH/PUT /sleep_alerts/1.json
-  def update
-    respond_to do |format|
-      if @sleep_alert.update(sleep_alert_params)
-        format.html { redirect_to @sleep_alert, notice: 'Sleep alert was successfully updated.' }
-        format.json { render :show, status: :ok, location: @sleep_alert }
-      else
-        format.html { render :edit }
-        format.json { render json: @sleep_alert.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+  #   respond_to do |format|
+  #     if @sleep_alert.update(sleep_alert_params)
+  #       format.html { redirect_to @sleep_alert, notice: 'Sleep alert was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @sleep_alert }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @sleep_alert.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # DELETE /sleep_alerts/1
   # DELETE /sleep_alerts/1.json
-  def destroy
-    @sleep_alert.destroy
-    respond_to do |format|
-      format.html { redirect_to sleep_alerts_url, notice: 'Sleep alert was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+  # def destroy
+  #   @sleep_alert.destroy
+  #   respond_to do |format|
+  #     format.html { redirect_to sleep_alerts_url, notice: 'Sleep alert was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
