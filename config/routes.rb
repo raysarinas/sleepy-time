@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sleep_alerts
   get 'welcome/index'
   root 'welcome#index'
   get 'welcome/clock'

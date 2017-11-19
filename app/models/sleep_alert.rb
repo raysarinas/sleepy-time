@@ -1,0 +1,2 @@
+class SleepAlert < ApplicationRecord
+end

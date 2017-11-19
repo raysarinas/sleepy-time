@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @sleep_alert.user_id %>
+</p>
+
+<p>
+  <strong>Bed time:</strong>
+  <%= @sleep_alert.bed_time %>
+</p>
+
+<p>
+  <strong>Wake time:</strong>
+  <%= @sleep_alert.wake_time %>
+</p>
+
+<%= link_to 'Edit', edit_sleep_alert_path(@sleep_alert) %> |
+<%= link_to 'Back', sleep_alerts_path %>
